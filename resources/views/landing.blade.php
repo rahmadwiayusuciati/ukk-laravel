@@ -10,7 +10,7 @@
 
     <style>
         body {
-            background: url('/images/yuju.png') no-repeat center center fixed;
+            background: url('/images/bgrahma2.png') no-repeat center center fixed;
             display: flex;
             justify-content: center;
             align-items: center;

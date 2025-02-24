@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - To Do List</title>
+    <title>Signin - To Do List</title>
     <style>
         /* Styling Background */
         body {
-            background: url('/images/yuju.png') no-repeat center center fixed;
+            background: url('/images/bgrahma2.png') no-repeat center center fixed;
             background-size: cover;
             display: flex;
             align-items: center;
@@ -18,14 +18,15 @@
 
         /* Container untuk kotak login */
         .container {
-            width: 280px; /* Ukuran lebih kecil */
-            background: rgba(255, 255, 255, 0.1); /* Transparan */
+            width: 300px; /* Ukuran lebih kecil */
+            background: rgba(255, 255, 255, 0.936); /* Transparan */
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             position: absolute;
-            left: 10%; /* Menyesuaikan dengan area kosong */
+            left: 35%; /* Menyesuaikan dengan area kosong */
             backdrop-filter: blur(10px); /* Efek blur */
+            
         }
 
         /* Style untuk teks judul */
@@ -34,6 +35,7 @@
             text-align: center;
             color: #003366;
             margin-bottom: 12px;
+            margin
         }
 
         /* Styling input */
@@ -98,14 +100,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Login Now</h1>
+        <h1>Sign In</h1>
         <form action="{{ route('login') }}" method="POST">
             @csrf
             <input type="text" name="email" placeholder="Email or Username" required>
             <input type="password" name="password" placeholder="Password" required>
-            <button type="submit" class="btn">LOGIN</button>
+            <button type="submit" class="btn">SIGN IN</button>
         </form>
-        <span class="link">Not a member? <a href="{{ route('register') }}">Signup now</a></span>
+        <span class="link">Not a member? <a href="{{ route('register') }}">Sign Up now</a></span>
     </div>
 </body>
 </html>
